@@ -2,15 +2,16 @@
 #include <iostream>
 
 template <typename T>
-  requires std::integral<T>
+    requires std::integral<T>
 T add(T a, T b)
 {
-  return a + b;
+    return a + b;
 }
 
 int main()
 {
-  std::cout << "Hello from C++ 20 with CMake on Linux/Windows/MacOS" << std::endl;
-  std::cout << "The sum is " << add(7, 8) << std::endl;
-  return 0;
+    std::cout << "Hello from C++ 20 with CMake on Linux/Windows/MacOS"
+              << std::endl;
+    std::cout << "The sum is " << add(9, 7) << std::endl;
+    return 0;
 }
