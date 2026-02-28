@@ -10,7 +10,7 @@ project(HelloApp
         LANGUAGES C CXX)
 
 # Set the C++ standard for the project
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # List Sources Files
@@ -21,5 +21,5 @@ add_executable(HelloAppBinary src/main.cpp
 
 # Targets
 target_include_directories(HelloAppBinary PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_compile_features(HelloAppBinary PUBLIC cxx_std_20)
+target_compile_features(HelloAppBinary PUBLIC cxx_std_23)
 

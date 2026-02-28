@@ -21,8 +21,8 @@ project(HelloApp
         LANGUAGES C CXX)
 
 # Set the C++ standard for the project
-set(CXX_STANDARD_REQUIRED ON)  # Make C++20 a hard requirement
-set(CMAKE_CXX_STANDARD 20)  # Default C++ standard for targets
+set(CXX_STANDARD_REQUIRED ON)  # Make C++23 a hard requirement
+set(CMAKE_CXX_STANDARD 23)  # Default C++ standard for targets
 
 # Embedded Static Library Target
 add_library(operations STATIC src/operations.cpp)
